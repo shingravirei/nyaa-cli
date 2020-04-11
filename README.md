@@ -1,4 +1,4 @@
 # Nyaa-cli
 
-# Todo
+## Todo
 * write the docs
