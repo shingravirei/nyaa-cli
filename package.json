@@ -1,0 +1,30 @@
+{
+    "name": "nyaa-cli",
+    "version": "0.0.1",
+    "description": "A simple cli that searches and downloads torrents from nyaa.si for you.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/index",
+        "test": "jest"
+    },
+    "keywords": [
+        "nyaa",
+        "cli",
+        "torrent",
+        "anime",
+        "manga"
+    ],
+    "author": "shingravirei",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "commander": "^5.0.0",
+        "nyaapi": "^2.1.3",
+        "open": "^7.0.3",
+        "readline-sync": "^1.4.10",
+        "table": "^5.4.6"
+    },
+    "bin": {
+        "nyaa-cli": "./src/index.js"
+    }
+}
