@@ -49,6 +49,14 @@ const n = program.numberOfResults;
             ],
         ];
 
+        config = {
+            columns: {
+                1: {
+                    width: 75,
+                },
+            },
+        };
+
         result.forEach((torrent, index) => {
             const row = [];
 
@@ -62,7 +70,7 @@ const n = program.numberOfResults;
         });
 
         console.log();
-        console.log(table(data));
+        console.log(table(data, config));
 
         const index = readlineSync.question(
             chalk.green('Which one you want to download? ')
