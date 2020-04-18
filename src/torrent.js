@@ -1,14 +1,14 @@
 const open = require('open');
 
-const openMagnet = async (animes, index) => {
-    if (typeof index === 'object') {
-        for (i in index) {
-            const torrent = animes[i];
+const openMagnet = async (animes, indexList) => {
+    for (let i = 0; i < indexList.length; i++) {
+        if (indexList[i] > animes.length - 1) {
+            console.log('Index out of range.');
 
-            await open(torrent.links.magnet);
+            process.exit(1);
         }
-    } else {
-        const torrent = animes[index];
+
+        const torrent = animes[indexList[i]];
 
         await open(torrent.links.magnet);
     }

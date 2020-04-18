@@ -34,8 +34,8 @@ const insertRow = (result) => {
 };
 
 const printTable = () => {
+    process.stdout.write(table(data, config));
     console.log();
-    console.log(table(data, config));
 };
 
 module.exports = {

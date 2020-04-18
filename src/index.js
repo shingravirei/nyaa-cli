@@ -6,15 +6,18 @@ const { openMagnet } = require('./torrent');
 
 const main = async () => {
     try {
+        // console.log('searching...\r');
+        process.stdout.write('searching...\r');
+
         const result = await fetchAnimes();
 
         insertRow(result);
 
         printTable();
 
-        const index = readLine(result.length);
+        const indexList = readLine();
 
-        await openMagnet(result, index);
+        await openMagnet(result, indexList);
 
         process.exit(0);
     } catch (err) {
