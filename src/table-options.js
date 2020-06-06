@@ -25,7 +25,7 @@ const insertRow = (result) => {
 
         row.push(chalk.blue(`${index}`));
         row.push(chalk.white(`${torrent.name}`));
-        row.push(chalk.yellow(`${torrent.fileSize}`));
+        row.push(chalk.yellow(`${torrent.filesize}`));
         row.push(chalk.green(`${torrent.seeders}`));
         row.push(chalk.red(`${torrent.leechers}`));
 

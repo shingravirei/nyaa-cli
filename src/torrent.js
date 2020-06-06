@@ -10,7 +10,7 @@ const openMagnet = async (animes, indexList) => {
 
         const torrent = animes[indexList[i]];
 
-        await open(torrent.links.magnet);
+        await open(torrent.magnet);
     }
 };
 
