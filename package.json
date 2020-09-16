@@ -18,11 +18,11 @@
     "license": "MIT",
     "dependencies": {
         "chalk": "^4.1.0",
-        "commander": "^5.1.0",
+        "commander": "^6.1.0",
         "nyaapi": "^2.3.3",
         "open": "^7.2.1",
         "readline-sync": "^1.4.10",
-        "table": "^5.4.6"
+        "table": "^6.0.3"
     },
     "bin": {
         "nyaa-cli": "./src/index.js"
